@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Testimonials = () => {
   return (
     <section id="testimonials" className="pt-32 pb-16">
-      {/* HEADING */}
+      {/* HEADING  */}
       <motion.div
         className="md:w-1/3 text-center md:text-left"
         initial="hidden"
@@ -63,7 +63,7 @@ const Testimonials = () => {
             Aliquam aliquet integer ut fames odio in at. At magna ornare dictum
             lectus.
           </p>
-        </motion.div>
+        </motion.div> 
 
         <motion.div
           className="mx-auto relative bg-yellow max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
