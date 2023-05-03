@@ -9,16 +9,15 @@ import Footer from "./scenes/Footer";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState } from "react";
 import Testimonials from "./scenes/Testimonials";
-import { motion } from "framer-motion";  
+import { motion } from "framer-motion";
 
-function App() { 
+function App() {
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   const isDesktop = useMediaQuery("(min-width: 1060px)");
 
   useEffect(() => {
     const handleScroll = () => {
-      
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
         setSelectedPage("home");
@@ -50,14 +49,14 @@ function App() {
         >
           <Landing setSelectedPage={setSelectedPage} />
         </motion.div>
-      </div> 
+      </div>
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full ">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
           onViewportEnter={() => setSelectedPage("skills")}
-        > 
+        >
           <MySkills />
         </motion.div>
       </div>
@@ -97,4 +96,3 @@ function App() {
 }
 
 export default App;
-

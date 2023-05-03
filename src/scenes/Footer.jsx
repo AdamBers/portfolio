@@ -10,7 +10,7 @@ const Footer = () => {
             Adam Bers
           </p>
           <p className="font-playfair text-md text-yellow">
-            ©2023 Adam Bers. All Rights Reserved.
+            ©2023 Adam Bersanukaev. All Rights Reserved.
           </p>
         </div>
       </div>
